@@ -1,0 +1,502 @@
+@import url('./util.css');
+@import url('./responsive.css');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x:hidden;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    position: fixed;
+    top:0;
+    width:100vw;
+    z-index: 2;
+    background-color: var(--secondary);
+    box-shadow: 0 0 5px gray;
+    height: 8vh;
+}
+
+header .logo
+{
+    display: flex;
+    align-items: center;
+}
+
+
+header .logo h2
+{
+    color:var(--primary);
+    
+}
+
+header nav
+{
+    flex-basis: 80%;
+    text-align: right;
+    transition: .2s ease;
+}
+
+header nav a
+{
+    text-decoration: none;
+    margin:20px;
+    color:var(--primary);
+}
+
+header svg 
+{
+    font-size: 25px;
+    color:white;
+    cursor: pointer;
+}
+
+header svg path
+{
+    display: none;
+}
+
+
+
+main
+{
+    position: relative;
+}
+
+main section.hero
+{
+    width:100vw;
+    height: 100vh;
+    background-image: linear-gradient(25deg,var(--primary) 50%,var(--secondary) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+main section.hero .hero_content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1.stroke
+{
+    font-size:3rem;
+    -webkit-text-stroke-color: var(--pinkish);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+}
+
+h1.filled
+{
+    position: relative;
+    bottom:17%;
+    font-size:3rem;
+    color:var(--pinkish);
+    height: 10px;
+}
+
+main section.hero img.left_lines,
+main section.hero img.right_lines
+{
+    transform: scale(.6);
+}
+
+main section.hero img.left_lines
+{
+    position: absolute;
+    left:3%;
+}
+
+main section.hero img.right_lines
+{
+    position: absolute;
+    right:3%;
+}
+
+.btn
+{
+    padding: 10px 60px;
+    background-color: var(--pinkish);
+    border:none;
+    color:white;
+    font-size: 1rem;
+    border-radius: 20px;
+    position: absolute;
+    bottom:16%;
+
+}
+
+main .services
+{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+
+main .services .cards 
+{
+    display: flex;
+    width:80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .services .cards .card
+{
+    width: 33.3%;
+    height: 77vh;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+main .services .cards .card .btn
+{
+    margin:0;
+    left:20%;
+}
+
+
+main .services .cards .card h2
+{
+    text-align: center;
+    margin-top:4%;
+}
+
+main .services .cards .card ul
+{
+    text-align: left;
+    margin: 15% 30% 0;
+    font-size:1.1rem;
+    list-style-type:square;
+}
+
+main .services .cards .card ul li
+{
+    margin:10px;
+}
+
+main .services .cards .card h2 span
+{
+    color:gray;
+    font-weight: 100;
+}
+
+
+main .services .cards .card.premium
+{
+    transform: scale(1.1);
+    background-image:linear-gradient(75deg,#a5edfa 40%,#53b3c4) ;
+    z-index: 1;
+}
+
+main .services .cards .card.premium .btn
+{
+    font-weight: 600;
+}
+
+main .services .cards .card.premium,
+main .services .cards .card.premium span
+{
+    color:white
+}
+
+main
+{
+    height: max-content;
+}
+
+main .about
+{
+    height: 100vh;
+}
+
+main .about .about_head
+{
+    padding-top: 2%;
+    height: 25vh;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(90deg,rgba(0,0,0,.4),rgba(255,0,100,0.6) 60%);
+}
+
+main .about .about_head img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+main .about .about_head h1.filled
+{
+    color:white;
+}
+
+main .about .about_head h1.stroke
+{
+    -webkit-text-stroke-color: white;
+}
+
+main .about .about_content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+main .about .about_content .info
+{
+    flex-basis: 40%;
+    margin-right: 70px;
+}
+
+main .about .about_content .info h2
+{
+    color:gray;
+    font-size:1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+main .about .about_content .info p
+{
+    color:rgba(0,0,0,.4);
+    font-size:.9rem;
+    margin:6% 0;
+}
+
+main .about .about_content .info .boxes
+{
+    display: flex;
+    justify-content: space-around;   
+    width:100%;
+}
+
+main .about .about_content .info .boxes .box
+{
+    width:150px;
+    height: 150px;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main .about .about_content .info .boxes .box img
+{
+    width:50%;
+    margin:auto;
+}
+
+main .about .about_content .about_img
+{
+    flex-basis: 50%;
+}
+
+main .about .about_content .about_img img
+{
+    width: 100%;
+
+}
+
+footer
+{
+    margin-top: 10%;
+    width: 100vw;
+    height: 35vh;
+    background-color: rgba(0,0,0,.8);
+}
+
+footer .container
+{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .container .social_links
+{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+footer .container .social_links svg
+{
+    color:white;
+    font-size:1.5rem;
+    margin-right:40px;
+}
+
+
+footer .container h3
+{
+    color:#feda6a;
+}
+
+footer .container p
+{
+    color:gray;
+    margin:15px 0;
+}
+
+
+footer .container .search input
+{
+    padding: 8px 40px;
+    color:white;
+    background-color: var(--primary);
+    border:none;
+}
+
+footer .container .search input:focus
+{
+    color:var(--secondary);
+}
+
+
+footer .container .search button
+{
+    padding:8px 20px;
+    background-color: var(--secondary);
+    border:none;
+    position: relative;
+    left:-6px;
+    width:70px;
+    color:white;
+}
+
+/* Responsive */
+@media (max-width:1280px)
+{
+    html
+    {
+        font-size:70%;
+    }
+
+    header
+    {
+        padding: 15px 30px;
+    }
+
+    main section.hero img.left_lines,
+    main section.hero img.right_lines
+    {
+        display: none;
+    }
+
+    main .services .cards
+    {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    main .services .cards .card
+    {
+        width:300px;
+        height: max-content;
+    }
+
+    main .services .cards .card.premium
+    {
+        transform: scale(1);
+    }
+
+    main .services .cards .card .btn
+    {
+        position: relative;
+        margin: 40px 0;
+        left:0%;
+
+    }
+
+    main .about .about_content
+    {
+        flex-direction: column;
+    }
+
+    main .about .about_content .about_img
+    {
+        display: none;
+    }
+
+    header nav
+    {
+        position: absolute;
+        top:0;
+        right:0;
+        background-color: var(--pinkish);
+        height: 100vh;
+        width:50vw;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size:1.2rem;
+        font-weight: 600;
+        overflow: hidden;
+    }
+
+    header nav a
+    {
+        padding-top: 20%;
+        position: absolute;
+        top:calc(var(--gap)*7px);
+    }
+    
+
+    header nav svg
+    {
+        position: absolute;
+        left:8%;
+        top:6%;
+        font-size:2.6rem;
+    }
+
+
+    
+    header svg path
+    {
+        display: initial;
+    }
+
+    footer .container .search input
+    {
+        margin-bottom: 10%;
+    }
+
+
+
+
+}

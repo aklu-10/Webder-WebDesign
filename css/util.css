@@ -1,0 +1,21 @@
+:root
+{
+    --primary:#fdf5df;
+    --secondary:#5ebec4;
+    --pinkish:#f92c85;
+}
+
+::-webkit-scrollbar
+{
+    width:5px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--secondary);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webder</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <header>
+    
+        
+        <a style="text-decoration:none;" href="#" class="logo">
+           
+            <img src="img/logo.png" alt="logo">
+            <h2 >WEBDER</h2>
+        </a>
+
+        <nav class="menu_links">
+            <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+            <a href="#pricing" style="--gap:30">PRICING</a>
+            <a href="#about" style="--gap:20">ABOUT</a>
+        </nav>
+
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <img src="img/lines_graphic.png" alt="lines_image" class="left_lines">
+
+            <div class="hero_content">
+                <h1 class="stroke">BUILD YOUR WEBSITE</h1>
+                 <h1 class="filled">BUILD YOUR WEBSITE</h1>
+                <h1 class="stroke">BUILD YOUR WEBSITE</h1>
+                <h1 class="filled">BUILD YOUR WEBSITE</h1>
+                <h1 class="stroke">BUILD YOUR WEBSITE</h1>
+                <h1 class="filled">BUILD YOUR WEBSITE</h1>
+                <h1 class="stroke">BUILD YOUR WEBSITE</h1>
+                <h1 class="filled">BUILD YOUR WEBSITE</h1>
+            </div>
+
+            <img src="img/lines_graphic2.png" alt="lines_image" class="right_lines">
+
+
+            <button class="btn">GET ONE</button>
+
+
+        </section>
+
+        <section class="services" id="pricing">
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Free</h3>
+                    <h2>$0<span>/mo</span></h2>
+
+                    <ul>
+                        <li>1 user request</li>
+                        <li>Call support</li>
+                        <li>Revisions</li>
+                        <li>1 user request</li>
+
+                    </ul>
+                    <button class="btn">Start with Free</button>
+
+                </div>  
+
+                <div class="card premium">
+                    <h3>Premium</h3>
+                    <h2>$150<span>/mo</span></h2>
+                    
+                    <ul>
+                        <li>1 user request</li>
+                        <li>Call support</li>
+                        <li>Revisions</li>
+                        <li>1 user request</li>
+                    </ul>
+
+                    <button class="btn">Start with Free</button>
+
+                </div>  
+
+                <div class="card">
+                    
+                    <h3>Enterprise</h3>
+                    <h2>$150<span>/mo</span></h2>
+                    
+                    <ul>
+                        <li>1 user request</li>
+                        <li>Call support</li>
+                        <li>Revisions</li>
+                        <li>1 user request</li>
+
+                    </ul>
+                    <button class="btn">Start with Free</button>
+
+                </div>  
+
+
+
+            </div>   
+
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="about_head">
+                <h1 class="stroke">WHO WE ARE</h1>
+                <h1 class="filled">WHO WE ARE</h1>
+                <img src="img/ocean.jpg" alt="ocean">
+            </div>
+
+            <div class="about_content">
+                <div class="info">
+                    <h2>MISSION</h2>   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore sunt voluptas veniam nulla minus possimus sequi dolorum harpisicing elit. Deleniti dolore sunt voluptas veniam nulla minus possimus sequi dolorum harum, dolor tempore maiores quas a facere inventore accusantium eius fugit repellendus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore sunt voluptas veniam nulla minus possimus sequi dolorum harum, dolor tempore maiores quas a facere inventore accusantium eius fugit repellendus?</p>
+
+                    <div class="boxes">
+                        
+                        <div class="box">
+                            <img src="img/about_graphic.png" alt="box_image">
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="img/about_graphic.png" alt="box_image">
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="about_img">
+                    <img src="img/ocean.jpg" alt="about_us_image">
+                </div>
+
+            </div>  
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Call us at 8473-3723-4321-3232</p>
+                <div class="social_links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="support">
+                <h3>Support</h3>
+                <p>FAQ</p>
+                <p>Downloads</p>
+                <p>Locate A Dealer</p>
+                <p>Registration</p>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Type here...">
+                <button>search</button>
+            </div>
+
+        </div>
+
+
+    </footer>
+    
+
+    <script>
+        
+        let menus=document.querySelector(".menu_links");    
+        
+        window.innerWidth<1280 ? menus.style.maxWidth='0px' : menus.style.maxWidth='80vw'
+        
+        function toggleMenu()
+        {
+            if (menus.style.maxWidth=='0px')
+            {
+                menus.style.maxWidth='50vw';
+            }
+            else
+            {
+                menus.style.maxWidth='0px';
+            }
+
+        }
+
+        window.onresize=()=>
+        {
+            window.innerWidth<1280 ? menus.style.maxWidth='0px' : menus.style.maxWidth='80vw'
+        }
+
+    </script>
+
+</body>
+
+</html>
